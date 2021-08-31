@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  blend_coffee: MyString
+  origin: MyString
+  sale_date: 2021-08-30 23:55:03
+  amount: 1
+
+two:
+  price: 1
+  blend_coffee: MyString
+  origin: MyString
+  sale_date: 2021-08-30 23:55:03
+  amount: 1

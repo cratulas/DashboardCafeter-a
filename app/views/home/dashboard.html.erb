@@ -1,2 +1,38 @@
-<h1>Home#dashboard</h1>
-<p>Find me in app/views/home/dashboard.html.erb</p>
+<h1>Graficos</h1>
+
+<div>
+    <h3> Ventas mensuales de los últimos 12 meses</h3>
+    <%= column_chart @sales_all %>
+    <h3> Cantidad de ventas mensual de los últimos 12 meses.</h3>
+    <%= column_chart @sales_amount_month %>
+    <h3> Promedio de venta mensual de los últimos 12 meses</h3>
+    <%= column_chart @sales_average %>
+</div>
+
+<div>
+    <h1>Origenes del cafe </h1>
+
+    <h3> Origenes del cafe de los últimos 12 meses</h3>
+    <%= pie_chart @sales_amount12 %>
+    <h3> Origenes del cafe de los últimos 6 meses</h3>
+    <%= pie_chart @sales_amount6 %>
+    <h3> Origenes del cafe de los últimos 3 meses</h3>
+    <%= pie_chart @sales_amount3 %>
+    <h3> Ventas mensual ultimo mes</h3>
+    <%= pie_chart @sales_amount1 %>
+    
+
+    <h1>Mezclas de cafe</h1>
+
+    <h3>Ultimos 12 meses</h3>
+    <%= pie_chart @sales_blend_coffee12 %>
+    <h3>Ultimos 6 meses</h3>
+    <%= pie_chart @sales_blend_coffee6 %>
+    <h3>Ultimos 3 meses</h3>
+    <%= pie_chart @sales_blend_coffee3 %>
+    <h3>Ultimo mes</h3>
+    <%= pie_chart @sales_blend_coffee1 %>
+
+
+</div>
+
